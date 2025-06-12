@@ -22,7 +22,7 @@ app.get('/', (req, res) => {
 
 });
 
-app.post('/profile', async (req, res) => {
+app.post('/signup', async (req, res) => {
   try {
     const { username, email, password } = req.body;
     if (!username || !email || !password) {
